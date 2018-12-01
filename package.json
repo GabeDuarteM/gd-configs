@@ -1,13 +1,22 @@
 {
   "name": "gd-configs",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GabrielDuarteM/gd-configs.git"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "prettier": "^1.15.3",
-    "semantic-release": "^15.12.3"
+    "semantic-release": "^15.12.3",
+    "travis-deploy-once": "^5.0.9"
   }
 }
