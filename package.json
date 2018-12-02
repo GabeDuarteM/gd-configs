@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "lint": "prettier --list-different **/* *",
+    "ci": "npm run lint"
   },
   "repository": {
     "type": "git",

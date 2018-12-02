@@ -4,6 +4,7 @@ cache:
     - ~/.npm
 node_js:
   - node
+script: npm run ci
 after_success:
   - npm run travis-deploy-once "npm run release"
 branches:
