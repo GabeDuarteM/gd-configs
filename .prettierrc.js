@@ -1,1 +1,1 @@
-module.exports = require('./prettier/.prettierrc')
+module.exports = require('./prettier')
