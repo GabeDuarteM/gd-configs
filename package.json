@@ -15,8 +15,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^1.15.3",
-    "semantic-release": "^15.12.3",
-    "travis-deploy-once": "^5.0.9"
+    "prettier": "1.15.3",
+    "semantic-release": "15.12.3",
+    "travis-deploy-once": "5.0.9"
   }
 }
