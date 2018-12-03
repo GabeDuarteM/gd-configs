@@ -18,7 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "1.15.3",
-    "semantic-release": "15.12.3",
+    "semantic-release": "15.12.4",
     "travis-deploy-once": "5.0.9"
   }
 }
