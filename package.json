@@ -31,8 +31,8 @@
     "travis-deploy-once": "5.0.9"
   },
   "dependencies": {
-    "arrify": "^1.0.1",
-    "lodash.has": "^4.5.2",
-    "read-pkg-up": "^4.0.0"
+    "arrify": "1.0.1",
+    "lodash.has": "4.5.2",
+    "read-pkg-up": "4.0.0"
   }
 }
