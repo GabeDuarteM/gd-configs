@@ -54,6 +54,7 @@
     "eslint-plugin-react": "7.11.1",
     "eslint-plugin-typescript": "0.13.0",
     "lodash.has": "4.5.2",
-    "read-pkg-up": "4.0.0"
+    "read-pkg-up": "4.0.0",
+    "typescript-eslint-parser": "21.0.2"
   }
 }
