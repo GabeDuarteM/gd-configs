@@ -1,3 +1,5 @@
+// @ts-check
+
 const path = require('path')
 const { testMatch, testIgnores } = require('./jest.patterns')
 const { hasFile, hasPkgProp } = require('../utils')

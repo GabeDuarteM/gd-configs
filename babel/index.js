@@ -1,6 +1,6 @@
 const semver = require('semver')
 
-const { ifAnyDep, pkg } = require('../utils')
+const { pkg } = require('../utils')
 
 const getNodeVersion = ({ engines: { node: nodeVersion = '8' } = {} }) => {
   const oldestVersion = semver
@@ -18,13 +18,8 @@ const getNodeVersion = ({ engines: { node: nodeVersion = '8' } = {} }) => {
 }
 
 const isTest = (process.env.BABEL_ENV || process.env.NODE_ENV) === 'test'
-const isReact = ifAnyDep('react', true, false)
 
-const envTargets = isTest
-  ? { node: 'current' }
-  : !isReact
-  ? { node: getNodeVersion(pkg) }
-  : undefined
+const envTargets = isTest ? { node: 'current' } : { node: getNodeVersion(pkg) }
 const envOptions = { modules: false, loose: true, targets: envTargets }
 
 module.exports = () => ({
