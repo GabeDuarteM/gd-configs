@@ -1,8 +1,7 @@
 {
   "name": "gd-configs",
   "version": "0.0.0-development",
-  "description": "",
-  "main": "index.js",
+  "description": "A package with most of my configs",
   "scripts": {
     "release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
@@ -13,8 +12,18 @@
     "type": "git",
     "url": "https://github.com/GabrielDuarteM/gd-configs.git"
   },
-  "keywords": [],
-  "author": "",
+  "files": [
+    "./babel/*",
+    "./eslint/*",
+    "./jest/*",
+    "./prettier/*",
+    "./semantic-release/*",
+    "./typescript/*"
+  ],
+  "keywords": [
+    "don't know what keywords to put here, so i will just leave this message here, along with an emoji 🙃"
+  ],
+  "author": "Gabriel Duarte",
   "license": "MIT",
   "devDependencies": {
     "prettier": "1.15.3",
