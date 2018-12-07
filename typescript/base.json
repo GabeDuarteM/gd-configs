@@ -6,16 +6,19 @@
     "sourceMap": true,
     "strict": true,
     "lib": ["esnext"],
-    "typeRoots": ["../../node_modules/@types", "../../src/@types"],
-    "outDir": "../../dist",
+    "typeRoots": [
+      "../../../../../node_modules/@types",
+      "../../../../../src/@types"
+    ],
+    "outDir": "../../../../../dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   },
-  "include": ["../../src/**/*"],
+  "include": ["../../../../../src/**/*"],
   "exclude": [
-    "../../node_modules/**/*",
-    "../../dist/**/*",
-    "../../src/**/*.test.ts",
-    "../../src/**/*.test.js"
+    "../../../../../node_modules/**/*",
+    "../../../../../dist/**/*",
+    "../../../../../src/**/*.test.ts",
+    "../../../../../src/**/*.test.js"
   ]
 }
