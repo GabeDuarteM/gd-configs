@@ -1,3 +1,5 @@
+// @ts-check
+
 const semver = require('semver')
 
 const { pkg } = require('../utils')
@@ -25,7 +27,6 @@ const envOptions = { modules: false, loose: true, targets: envTargets }
 module.exports = () => ({
   presets: [
     require.resolve('@babel/preset-typescript'),
-    isReact && require.resolve('@babel/preset-react'),
     [require.resolve('@babel/preset-env'), envOptions],
   ].filter(Boolean),
   plugins: [
