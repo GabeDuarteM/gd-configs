@@ -13,12 +13,12 @@
     "url": "https://github.com/GabrielDuarteM/gd-configs.git"
   },
   "files": [
-    "./babel/*",
-    "./eslint/*",
-    "./jest/*",
-    "./prettier/*",
-    "./semantic-release/*",
-    "./typescript/*"
+    "babel/*",
+    "eslint/*",
+    "jest/*",
+    "prettier/*",
+    "semantic-release/*",
+    "typescript/*"
   ],
   "keywords": [
     "don't know what keywords to put here, so i will just leave this message here, along with an emoji 🙃"
