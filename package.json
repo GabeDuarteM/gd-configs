@@ -18,7 +18,8 @@
     "jest/*",
     "prettier/*",
     "semantic-release/*",
-    "typescript/*"
+    "typescript/*",
+    "utils.js"
   ],
   "keywords": [
     "don't know what keywords to put here, so i will just leave this message here, along with an emoji 🙃"
