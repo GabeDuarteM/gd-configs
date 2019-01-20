@@ -23,7 +23,7 @@ const hasFile = (...p) => fs.existsSync(fromRoot(...p))
 /**
  * @param {any} props
  */
-const hasPkgProp = props => arrify(props).some(prop => has(pkg, prop))
+const hasPkgProp = (props) => arrify(props).some((prop) => has(pkg, prop))
 
 module.exports = {
   pkg,
