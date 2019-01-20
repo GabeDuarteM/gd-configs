@@ -87,7 +87,6 @@ const config = {
     'react/void-dom-elements-no-children': 'error',
     'react/jsx-boolean-value': 'error',
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.tsx'] }],
-    'react/jsx-handler-names': 'error',
     'react/jsx-key': 'error',
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
