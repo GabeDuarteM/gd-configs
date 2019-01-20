@@ -174,7 +174,6 @@ module.exports = {
     'spaced-comment': 'error',
 
     /* ECMAScript 6 */
-    'arrow-body-style': ['error', 'as-needed'],
     'no-duplicate-imports': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',

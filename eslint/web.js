@@ -89,15 +89,6 @@ const config = {
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.tsx'] }],
     'react/jsx-handler-names': 'error',
     'react/jsx-key': 'error',
-    'react/jsx-no-bind': [
-      'error',
-      {
-        ignoreRefs: true,
-        allowFunctions: false,
-        allowBind: false,
-        ignoreDOMComponents: true,
-      },
-    ],
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
     'react/jsx-no-target-blank': 'error',
