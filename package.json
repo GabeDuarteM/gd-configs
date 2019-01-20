@@ -5,7 +5,7 @@
   "scripts": {
     "release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
-    "lint": "prettier --list-different **/* *",
+    "lint": "prettier --check **/* *",
     "ci": "npm run lint"
   },
   "repository": {
