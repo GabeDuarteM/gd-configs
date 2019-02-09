@@ -25,24 +25,12 @@ const envTargets = isTest ? { node: 'current' } : { node: getNodeVersion(pkg) }
 const envOptions = { modules: false, loose: true, targets: envTargets }
 
 module.exports = () => ({
-  presets: [
-    require.resolve('@babel/preset-typescript'),
-    [require.resolve('@babel/preset-env'), envOptions],
-  ].filter(Boolean),
+  presets: ['@babel/preset-typescript', ['@babel/preset-env', envOptions]],
   plugins: [
-    require.resolve('babel-plugin-macros'),
-    [
-      require.resolve('@babel/plugin-proposal-class-properties'),
-      { loose: true },
-    ],
-    [
-      require.resolve('@babel/plugin-proposal-object-rest-spread'),
-      { loose: true },
-    ],
-    require.resolve('babel-plugin-minify-dead-code-elimination'),
-    [
-      require.resolve('@babel/plugin-transform-modules-commonjs'),
-      { loose: true },
-    ],
+    'babel-plugin-macros',
+    ['@babel/plugin-proposal-class-properties', { loose: true }],
+    ['@babel/plugin-proposal-object-rest-spread', { loose: true }],
+    'babel-plugin-minify-dead-code-elimination',
+    ['@babel/plugin-transform-modules-commonjs', { loose: true }],
   ],
 })

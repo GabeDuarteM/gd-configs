@@ -1,12 +1,10 @@
 language: node_js
-cache:
-  directories:
-    - ~/.npm
+cache: yarn
 node_js:
   - node
-script: npm run ci
+script: yarn ci
 after_success:
-  - npm run travis-deploy-once "npm run release"
+  - yarn travis-deploy-once "npm run release"
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
