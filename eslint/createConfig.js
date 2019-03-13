@@ -12,6 +12,7 @@ module.exports = (isTypescript, isWeb) => {
     'babel',
     isWeb && 'react',
     isWeb && 'jsx-a11y',
+    isWeb && 'react-hooks',
   ].filter(Boolean)
 
   const parserOptions = {
@@ -440,6 +441,11 @@ module.exports = (isTypescript, isWeb) => {
     'jsx-a11y/tabindex-no-positive': 'error',
   }
 
+  const reactHooksPlugin = isWeb && {
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+  }
+
   const rules = {
     ...possibleErrors,
     ...bestPractices,
@@ -450,6 +456,7 @@ module.exports = (isTypescript, isWeb) => {
     ...importPlugin,
     ...typescriptPlugin,
     ...reactPlugin,
+    ...reactHooksPlugin,
     ...a11yPlugin,
   }
 
