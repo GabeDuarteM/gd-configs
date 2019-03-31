@@ -17,7 +17,6 @@ module.exports = (isTypescript, isWeb) => {
 
   const parserOptions = {
     sourceType: 'module',
-    ecmaVersion: 6,
     ecmaFeatures: {
       jsx: isWeb,
     },
@@ -53,7 +52,10 @@ module.exports = (isTypescript, isWeb) => {
   }
 
   const possibleErrors = {
-    'no-undef': 'off', // issues with Interfaces: https://github.com/nzakas/eslint-plugin-typescript/issues/110
+    // for 'no-undef' on typescript, it is better to rely on ts to avoid issues with Interfaces:
+    // https://github.com/nzakas/eslint-plugin-typescript/issues/110
+    // https://github.com/eslint/typescript-eslint-parser/issues/437
+    'no-undef': isTypescript ? 'off' : 'error',
     'no-console': 'off',
     'no-template-curly-in-string': 'error',
   }
@@ -462,7 +464,7 @@ module.exports = (isTypescript, isWeb) => {
 
   const config = {
     extends: extend,
-    env: { node: !isWeb },
+    env: { node: !isWeb, jest: true, browser: isWeb, es6: true },
     parser: isTypescript ? '@typescript-eslint/parser' : 'babel-eslint',
     parserOptions,
     plugins,
