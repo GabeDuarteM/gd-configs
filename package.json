@@ -1,6 +1,8 @@
 {
   "name": "gd-configs",
   "version": "0.0.0-development",
+  "author": "Gabriel Duarte (https://www.gabrielduarte.tech)",
+  "license": "MIT",
   "description": "A package with most of my configs",
   "scripts": {
     "release": "semantic-release",
@@ -12,6 +14,10 @@
     "type": "git",
     "url": "https://github.com/GabrielDuarteM/gd-configs.git"
   },
+  "bugs": {
+    "url": "https://github.com/GabrielDuarteM/gd-configs/issues"
+  },
+  "homepage": "https://github.com/GabrielDuarteM/gd-configs#readme",
   "files": [
     "babel/*",
     "eslint/*",
@@ -26,8 +32,6 @@
   "keywords": [
     "don't know what keywords to put here, so i will just leave this message here, along with an emoji 🙃"
   ],
-  "author": "Gabriel Duarte",
-  "license": "MIT",
   "devDependencies": {
     "prettier": "1.16.4",
     "semantic-release": "15.13.3",
