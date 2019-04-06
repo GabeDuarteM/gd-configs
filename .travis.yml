@@ -3,8 +3,10 @@ cache: yarn
 node_js:
   - node
 script: yarn ci
-after_success:
-  - yarn travis-deploy-once "npm run release"
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+jobs:
+  include:
+    - stage: semantic-release
+      if: branch = master
+      node_js: node
+      script:
+        - yarn release
