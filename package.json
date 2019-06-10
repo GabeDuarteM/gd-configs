@@ -33,7 +33,7 @@
     "don't know what keywords to put here, so i will just leave this message here, along with an emoji 🙃"
   ],
   "devDependencies": {
-    "prettier": "1.16.4",
+    "prettier": "1.18.2",
     "semantic-release": "15.13.12"
   },
   "dependencies": {
