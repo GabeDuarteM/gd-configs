@@ -5,7 +5,7 @@ const arrify = require('arrify')
 const has = require('lodash.has')
 const { join, dirname } = require('path')
 
-const { pkg, path: pkgPath } = readPkgUp.sync({
+const { package: pkg, path: pkgPath } = readPkgUp.sync({
   cwd: fs.realpathSync(process.cwd()),
 })
 const appDirectory = dirname(pkgPath)
