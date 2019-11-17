@@ -2,11 +2,11 @@ language: node_js
 cache: yarn
 node_js:
   - node
-script: yarn ci
+script: yarn run ci
 jobs:
   include:
     - stage: semantic-release
       if: branch = master
       node_js: node
       script:
-        - yarn release
+        - npx semantic-release@^15
