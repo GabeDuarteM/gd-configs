@@ -34,7 +34,7 @@
     "prettier": "1.19.1"
   },
   "dependencies": {
-    "arrify": "2.0.1",
+    "arrify": "3.0.0",
     "lodash.has": "4.5.2",
     "read-pkg-up": "7.0.0"
   }
